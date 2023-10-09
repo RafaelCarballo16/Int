@@ -1,0 +1,29 @@
+package grupo6_registro;
+
+import javax.swing.JOptionPane;
+
+public class Grupo6_Registro {
+
+    public static void main(String[] args) {
+        String menu = "Digite una opcion\n1.Registrarse\n2.Ver inventario\n3.Registrar una venta\n4.Salir";
+        int opc;
+        boolean bandera = false;
+        do {
+            opc = Integer.parseInt(JOptionPane.showInputDialog(menu));
+            if (opc == 1) {
+                JOptionPane.showMessageDialog(null, "Escogio el numero 1");
+            }
+            else if (opc == 2) {
+                JOptionPane.showMessageDialog(null, "Escogio el numero 2");
+            }
+            else if (opc == 3) {
+                JOptionPane.showMessageDialog(null, "Escogio el numero 3");
+            } else if (opc == 4) {
+                bandera = true;
+            } else {
+                JOptionPane.showMessageDialog(null, "Error intente de nuevo.");
+            }
+        } while (bandera == false);
+        {
+            JOptionPane.showMessageDialog(null, "Ha salido del menu");
+        }}}
